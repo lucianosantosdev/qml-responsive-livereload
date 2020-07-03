@@ -14,17 +14,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        enhancedqmlapplicationengine.cpp \
-        main.cpp \
-        mainwindow.cpp
+        src/enhancedqmlapplicationengine.cpp \
+        src/mainwindow.cpp \
+        src/main.cpp \
 
-RESOURCES += qml.qrc
+RESOURCES += src/qml.qrc
 
-DISTFILES += main.qml
+DISTFILES += src/main.qml
 
 FORMS += \
-  mainwindow.ui
+  src/mainwindow.ui
 
 HEADERS += \
-  enhancedqmlapplicationengine.h \
-  mainwindow.h
+  src/enhancedqmlapplicationengine.h \
+  src/mainwindow.h
