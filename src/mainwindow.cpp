@@ -111,6 +111,7 @@ MainWindow::loadQml(const QUrl& qmlUrl)
   qputenv("QT_QUICK_CONTROLS_CONF",
           (fileDir + "/qtquickcontrols2.conf").toLatin1());
   for (auto& qmlAppEngine : m_qmlAppEngineList) {
+    qmlAppEngine->addImportPath(QStringLiteral("qrc:///"));
     qmlAppEngine->setMainUrl(qmlUrl);
   }
 }
