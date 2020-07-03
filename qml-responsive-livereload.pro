@@ -1,4 +1,9 @@
 QT += quick widgets
+CONFIG += link_pkgconfig
+static {
+    QT += svg
+    QTPLUGIN += qtvirtualkeyboardplugin
+}
 
 CONFIG += c++11
 
@@ -28,3 +33,5 @@ FORMS += \
 HEADERS += \
   src/enhancedqmlapplicationengine.h \
   src/mainwindow.h
+
+include(vendor/vendor.pri)

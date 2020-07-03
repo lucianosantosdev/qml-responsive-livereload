@@ -1,0 +1,3 @@
+[submodule "vendor/font/awesome/pri"]
+	path = vendor/font/awesome/pri
+	url = https://github.com/benlau/fontawesome.pri.git
